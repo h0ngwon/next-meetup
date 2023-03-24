@@ -1,7 +1,7 @@
 import Card from '../ui/Card';
 import classes from './MeetupItem.module.css';
 
-function MeetupItem(props) {
+const MeetupItem = (props) => {
 	return (
 		<li className={classes.item}>
 			<Card>
@@ -13,7 +13,7 @@ function MeetupItem(props) {
 					<address>{props.address}</address>
 				</div>
 				<div className={classes.actions}>
-					<button>Show Details</button>
+					<button>자세히 보기</button>
 				</div>
 			</Card>
 		</li>

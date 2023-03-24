@@ -1,21 +1,22 @@
+import Link from 'next/link'
 import classes from './MainNavigation.module.css';
 
-function MainNavigation() {
+const MainNavigation = () => {
 	return (
 		<header className={classes.header}>
-			<div className={classes.logo}>React Meetups</div>
+			<div className={classes.logo}>밋업</div>
 			<nav>
 				<ul>
 					<li>
-						<Link to='/'>All Meetups</Link>
+						<Link href='/'>만남들</Link>
 					</li>
 					<li>
-						<Link to='/new-meetup'>Add New Meetup</Link>
+						<Link href='/new-meetup'>새로운 만남</Link>
 					</li>
 				</ul>
 			</nav>
 		</header>
 	);
-}
+};
 
 export default MainNavigation;

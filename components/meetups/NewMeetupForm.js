@@ -3,13 +3,13 @@ import { useRef } from 'react';
 import Card from '../ui/Card';
 import classes from './NewMeetupForm.module.css';
 
-function NewMeetupForm(props) {
+const NewMeetupForm = (props) => {
 	const titleInputRef = useRef();
 	const imageInputRef = useRef();
 	const addressInputRef = useRef();
 	const descriptionInputRef = useRef();
 
-	function submitHandler(event) {
+	const submitHandler = (event) => {
 		event.preventDefault();
 
 		const enteredTitle = titleInputRef.current.value;
@@ -31,7 +31,7 @@ function NewMeetupForm(props) {
 		<Card>
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div className={classes.control}>
-					<label htmlFor='title'>Meetup Title</label>
+					<label htmlFor='title'>만남 제목</label>
 					<input
 						type='text'
 						required
@@ -40,11 +40,11 @@ function NewMeetupForm(props) {
 					/>
 				</div>
 				<div className={classes.control}>
-					<label htmlFor='image'>Meetup Image</label>
+					<label htmlFor='image'>사진</label>
 					<input type='url' required id='image' ref={imageInputRef} />
 				</div>
 				<div className={classes.control}>
-					<label htmlFor='address'>Address</label>
+					<label htmlFor='address'>주소</label>
 					<input
 						type='text'
 						required
@@ -53,7 +53,7 @@ function NewMeetupForm(props) {
 					/>
 				</div>
 				<div className={classes.control}>
-					<label htmlFor='description'>Description</label>
+					<label htmlFor='description'>만남 설명</label>
 					<textarea
 						id='description'
 						required
@@ -62,7 +62,7 @@ function NewMeetupForm(props) {
 					></textarea>
 				</div>
 				<div className={classes.actions}>
-					<button>Add Meetup</button>
+					<button>새로운 만남 추가</button>
 				</div>
 			</form>
 		</Card>
