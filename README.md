@@ -1,5 +1,6 @@
 # 📝 프로젝트명
 밋업 앱 (Meet up application)
+https://next-meetup-xi.vercel.app/
 <br><br>
 
 # 🖥️ 프로젝트 설명
@@ -12,6 +13,7 @@ Next.js 연습용 Meet up application
 * React
 * Next
 * MongoDB
+* Vercel
 <br><br>
 
 # 업데이트 내역
