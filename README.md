@@ -11,7 +11,9 @@ Next.js 연습용 Meet up application
 * CSS
 * React
 * Next
+* MongoDB
 <br><br>
 
 # 업데이트 내역
-*
+* 전체 모임 보여주는 기능
+* 새로운 모임 추가 기능
